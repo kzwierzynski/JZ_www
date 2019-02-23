@@ -1,0 +1,45 @@
+$prim: #0B2B47; //rgb(48, 60, 83);
+// $prim: rgb(29, 43, 69);
+$primd: darken($prim, 10%);
+$priml: lighten($prim, 10%);
+$prim1: rgba(11, 43, 71, 0.5);
+$prim2: rgba(11, 43, 71, 0.2);
+$prim3: rgba(11, 43, 71, 0.05);
+
+// $inf: rgb(55, 148, 253);
+// $infd: darken($inf, 10%);
+// $infl: lighten($inf, 10%);
+// $inf1: rgba(55, 148, 253, 0.5);
+// $inf2: rgba(55, 148, 253, 0.2);
+// $inf3: rgba(55, 148, 253, 0.05);
+
+$inf: $prim;
+$infd: darken($inf, 10%);
+$infl: lighten($inf, 10%);
+$inf1: $prim1;
+$inf2: $prim2;
+$inf3: $prim3;
+
+$brd: rgba(75, 75, 75, 0.25);
+$brdl: rgba(131, 131, 131, 0.25);
+$brdd: rgba(44, 44, 44, 0.25);
+
+$white: #fff;
+$whited: darken(#DADBDC, 2%);
+// $whited: rgba(255, 255, 255, 0.7);
+$whited2: rgba(255, 255, 255, 0.9);
+$whited3: rgba(255, 255, 255, 0);
+
+$divider: #aadcd2;
+
+$blackl: rgba(0, 0, 0, 0.8);
+$blackl1: rgba(0, 0, 0, 0.6);
+$blackl2: rgba(0, 0, 0, 0.0);
+
+$shadow: 0 1px 5px $brdd;
+$shadowPrim: 0 1px 5px $prim1;
+$shadowInf: 0 1px 5px $inf1;
+
+$green: #169e6a;
+$greend: darken(#169e6a, 8%);
+// $green: lighten(#159564, 2%);

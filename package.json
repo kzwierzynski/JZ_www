@@ -1,0 +1,25 @@
+{
+  "name": "jz_www",
+  "version": "1.0.0",
+  "description": "Jakub Żygalski WWW",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KZW",
+  "license": "ISC"
+}

@@ -1,0 +1,202 @@
+// @import 'variables';
+// @import 'footer';
+
+// Variable Overrides 
+$theme-colors: (
+  "primary": $prim,
+  // "info" : $inf
+);
+$body-bg: $prim1;
+
+// Bootstrap Sass Imports
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+// So that the footer is "sticky" to the bottom
+html{
+  height: 100%;
+}
+
+body{
+  position: relative;
+  min-height: 100%;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  font-family: 'Lato', sans-serif;
+  background: $prim3;
+}
+// "sticky" footer end
+
+// body{
+//   position:relative;
+//   font-family: 'Lato', sans-serif;
+//   font-size: 100%;
+//   padding-top: 80px;
+//   background: $prim3;
+// }
+
+a {
+  color: $green;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: $greend;
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  height: 80px;
+  padding: 0 !important;
+  background: $prim !important;  
+  border-bottom: solid $brd 2px !important;
+}
+
+.navbar-nav {
+  // display: inline-block;
+  margin: 0.5rem 0;
+}
+
+nav img{
+  height: 60px;
+}
+
+.nav a {
+  float: right;
+}
+
+.nav__link, .nav__txt, .nav-link--green {
+  display: inline-block;
+  font-size: 0.9rem !important;
+  padding: 0.3rem 0 !important;
+  margin-left: 1.5em;
+  line-height: 100%;
+  transition: color 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+.nav__link, .nav__txt {
+  text-transform: uppercase;
+  color: $whited !important;
+}
+
+.nav__txt {
+  color: $white !important;
+}
+
+.nav__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    content: "";
+    background-color: $whited;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.05s;
+  }
+
+  &:hover,
+  &.active {
+    color: $white !important;
+    text-decoration: none;
+
+    &::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+// .nav__link:hover {
+//   color: $white !important;
+//   text-decoration: none;
+// }
+
+// .nav__link.active{
+//   color: $white !important;
+//   border-bottom: solid 1px white;
+// }
+
+// tel i email ponad menu
+.nav-link--green{
+  // font-size: 0.9em;
+  // padding: 0.2em 0 !important;
+  // margin-left: 1.5em;
+}
+
+.navbar-collapse{
+  // display: flex;
+  flex-direction: column;
+}
+
+.card, .jumbotron, .box, .box1{
+  border: none !important;
+  box-shadow: $shadow;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.btn{
+  // border-bottom: solid $brdl 2px !important;
+}
+
+@media(max-width:991px){
+  nav img{
+    height: 50px;
+  }
+
+  .nav__link, .nav-link--green, .nav__txt {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media(max-width:767px){
+  .navbar-nav {
+    padding-bottom: 1rem;
+  }
+  .nav__link, .nav-link--green, .nav__txt {
+    margin: 0.6rem 0;
+    margin-left: 0;
+    font-size: 1.2rem !important;
+  }
+}
+
+// mobile
+@media(max-width:767px){
+  body{
+    font-size: 70%;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1.3rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+  h5{
+    font-size: 1rem;
+  }
+}

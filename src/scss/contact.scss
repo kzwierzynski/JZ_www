@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext");
+@import 'variables';
+@import 'general';
+@import 'sidebar';
+@import 'footer';
+
+// So that the footer is "sticky" to the bottom
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 120px;
+}
+// "sticky" footer end
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.row{
+  margin: 0;
+}
+
+.wrapper{
+  // padding: 0;
+  margin: 3em 0;
+  box-shadow: $shadow;
+}
+
+.company-info{
+  background:$priml;
+  color: $white;
+  text-align: center;  
+  padding: 1rem;
+}
+
+.company-info li{
+  margin-top: 0.4rem;  
+  color: $whited;
+}
+
+.company-info__link {
+  padding: 0.3rem 0;
+  font-size: 1em;
+  color: $whited;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+
+.contact{
+  background:#f9feff;
+  padding: 0;
+}
+
+.contact h3{
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+/* FORM STYLES */
+
+
+.contact form #js_send, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1rem;
+  border:1px solid $inf1;
+}
+
+.contact form #js_send{
+  background:$infl;
+  border:0;
+  text-transform: uppercase;
+  color:$white;    
+  cursor: pointer;  
+}
+
+.contact form #js_send:hover,.contact form #js_send:focus{
+  background:$inf;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+.contact form #js_send:disabled {
+  background-color: $inf2;
+  color: #aaa;
+  cursor: not-allowed !important;
+}
+
+.invalid-feedback{
+  font-size: 0.8em;
+}
+
+
+
+/* LARGE SCREENS */
+@media(min-width:768px){
+  .company-info li{
+    padding: 0;  
+  }
+}
